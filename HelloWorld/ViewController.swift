@@ -9,25 +9,25 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet var welcomeLabel: UILabel!
-    var availableColours = [UIColor]()
-    var randomColour: UIColor!
-    var previouslyColour: UIColor!
+    var availableColors = [UIColor]()
+    var randomColor: UIColor!
+    var previouslyColor: UIColor!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        availableColours += [.systemYellow, .systemOrange, .systemCyan, .systemGreen, .systemPink, .systemRed, .systemBlue, .systemPurple]
+        availableColors += [.systemYellow, .systemOrange, .systemCyan, .systemGreen, .systemPink, .systemRed, .systemBlue, .systemPurple]
         
         welcomeLabel.text = "Hello World!"
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         repeat {
-            randomColour = availableColours.randomElement()
-        } while randomColour == previouslyColour
+            randomColor = availableColors.randomElement()
+        } while randomColor == previouslyColor
         
-        previouslyColour = randomColour
+        previouslyColor = randomColor
                     
-        welcomeLabel.textColor = randomColour
+        welcomeLabel.textColor = randomColor
     }
 }
