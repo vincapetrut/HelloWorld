@@ -11,4 +11,4 @@
     </a>
 </p>
 
-<p align="center">Hello World is a iOS application that show a text from a string in a label (if you tap anywhere on the screen you will have a surprise) :)</p>
+<p align="center">Hello World is an iOS application that shows a text from a string in a label (if you tap anywhere on the screen you will have a surprise) :)</p>
